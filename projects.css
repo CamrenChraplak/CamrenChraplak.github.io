@@ -1,0 +1,33 @@
+:root {
+	--carousel-width: 100px;
+	--carousel-border: 2px;
+	--control-height: 24px;
+	--carousel-height: 50px;
+}
+
+.carousel-control {
+	position: fixed !important;
+	width: var(--carousel-width) !important;
+	height: 200px;
+	margin: 0 auto;
+	top: 50vh !important;
+}
+   
+.carousel-indicators {
+	top: calc(-1 * var(--control-height));
+	background-color: var(--red);
+	height: calc(20px + 2 * var(--carousel-border)) !important;
+	border-radius: 25px;
+	margin: 0px !important;
+	width: var(--carousel-width) !important;
+	translate: calc(var(--carousel-width) / -2);
+	border: var(--carousel-border) solid var(--yellow);
+}
+
+.carousel {
+	z-index: 1 !important;
+}
+
+.carousel-inner {
+	min-height: calc(50vh - var(--nav-height) - 9.5px);
+}

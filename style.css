@@ -1,0 +1,167 @@
+:root {
+    --red: #c83434;
+    --red-hover: #c84e4e;
+    --red-active: #c81a1a;
+    --yellow: #e2b62d;
+    --dark-blue: #001023;
+    --dark-blue-hover: #002046;
+    --dark-blue-active: #000811;
+    --icon-width: 30vw;
+    --img-width: 50vw;
+    --img-pad: 10px;
+    --text-width: 700px;
+}
+
+body, html {
+    color: white;
+    font-weight: normal;
+}
+
+body {
+    background-color: #001023;
+}
+
+html {
+    background-color: black;
+}
+
+.link-but {
+    color: white;
+    font-weight: bold;
+    background-color: var(--red);
+    border-radius: 30px;
+    border-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.link-but:hover {
+    color: white;
+    background-color: var(--red-hover);
+    text-decoration: none;
+}
+
+.link-but:active {
+    color: white;
+    background-color: var(--red-active);
+    text-decoration: none;
+}
+
+.link-but:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-cont {
+    display: flex !important;
+    flex-direction: row !important;
+    text-align: left !important;
+}
+
+.icon-flex-left {
+    flex: var(--pic-width) !important;
+}
+
+.icon-flex-right {
+    flex: calc(100vw - var(--pic-width)) !important;
+}
+
+.img-flex-left {
+    flex: var(--img-width) !important;
+}
+
+.img-flex-right {
+    flex: calc(100vw - var(--img-width)) !important;
+}
+
+.icon-flex-right, .img-flex-right {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --img-width: calc(100vw - 2 * var(--img-pad)) !important;
+        --icon-width: calc(100vw - 2 * var(--img-pad)) !important;
+    }
+    .flex-cont {
+        flex-direction: column !important;
+    }
+    .icon-flex-left, .icon-flex-right, .img-flex-left, .img-flex-right {
+        flex: 100% !important;
+    }
+}
+
+.icon-body {
+    width: var(--icon-width) !important;
+    border-radius: 20px !important;
+}
+
+.img-body {
+    width: var(--img-width) !important;
+    border-radius: 20px !important;
+}
+
+img {
+    margin: 10px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, ul {
+    font-weight: lighter;
+}
+
+li {
+    max-width: var(--text-width);
+}
+
+p {
+    max-width: var(--text-width);
+}
+
+table, tr, th,td {
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+p, h1, h2 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+p, h1, h2, .link-but {
+    margin-left: 10px;
+}
+
+h1, h2 {
+    color: var(--red);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date {
+    width: 150px;
+}
+
+.date-text {
+    width: 600px;
+}

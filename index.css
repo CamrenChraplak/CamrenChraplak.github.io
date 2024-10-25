@@ -1,0 +1,8 @@
+:root {
+    --main-width: 100vw;
+    text-overflow: "-";
+}
+
+li {
+    max-width: 560px !important;
+}
