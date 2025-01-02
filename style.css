@@ -165,3 +165,8 @@ h1, h2 {
 .date-text {
     width: 600px;
 }
+
+.bullet-note {
+    font-size: 10px;
+    font-style: italic;
+}
