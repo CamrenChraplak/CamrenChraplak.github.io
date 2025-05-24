@@ -16,8 +16,13 @@
     <body>
 
         <!-- navigation bar -->
+        <link rel="stylesheet" href="Navbar/nav.css">
         <div id="navcon"></div>
-        <script src="nav.js"></script>
+        <script>
+            $.get("Navbar/nav.html", function(data){
+                $("#navcon").replaceWith(data);
+            });
+        </script>
 
         <!-- Content -->
         <div class="flex-cont">
@@ -40,7 +45,7 @@
                     <b>Hardware:</b> AVR Microcontrollers, Basic Electronics<br>
                 </p>
 
-                <h2>Experience</h2>
+                <h2>Work Experience</h2>
                 <div id="hub"></div>
                 <p>
                     <ul>
@@ -75,7 +80,12 @@
         <script src="index.js"></script>
 
         <!-- contact bar -->
+        <link rel="stylesheet" href="Contact/contact.css">
         <div id="contact"></div>
-        <script src="contact.js"></script>
+        <script>
+            $.get("Contact/contact.html", function(data){
+                $("#contact").replaceWith(data);
+            });
+        </script>
     </body>
 </html>
