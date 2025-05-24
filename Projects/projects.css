@@ -31,3 +31,7 @@
 .carousel-inner {
 	min-height: calc(50vh - var(--nav-height) - 9.5px);
 }
+
+.buttons-cont {
+	max-width: var(--text-width);
+}
