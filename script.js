@@ -1,3 +1,9 @@
+/**
+ * Formats table with text on left and date on right
+ * @param {*} text Text on the left side
+ * @param {*} date Date on the right side
+ * @returns HTML formatted for a table
+ */
 function makeTable(text, date) {
     return `
         <table>
@@ -9,7 +15,7 @@ function makeTable(text, date) {
                 </th>
                 <th class='date'>
                     <p>
-                        <b><i>` + date + `</i></b>
+                        <b><i><tt>` + date + `</tt></i></b>
                     </p>
                 </th>
             </tr>

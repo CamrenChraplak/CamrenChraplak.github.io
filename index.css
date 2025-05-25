@@ -3,6 +3,6 @@
     text-overflow: "-";
 }
 
-li {
+li, p {
     max-width: 560px !important;
 }
