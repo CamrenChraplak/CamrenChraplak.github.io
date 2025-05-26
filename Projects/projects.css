@@ -12,7 +12,7 @@
 	margin: 0 auto;
 	top: 50vh !important;
 }
-   
+
 .carousel-indicators {
 	top: calc(-1 * var(--control-height));
 	background-color: var(--red);
