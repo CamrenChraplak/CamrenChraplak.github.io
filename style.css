@@ -11,6 +11,7 @@
     --icon-width: 30vw;
     --img-width: 50vw;
     --img-pad: 10px;
+    --img-right-pad: 0px;
     --text-width: 700px;
 }
 
@@ -40,6 +41,8 @@ html {
 
 img {
     padding: var(--img-pad);
+    padding-left: calc(var(--img-pad) + var(--img-right-pad));
+    margin: 0;
 }
 
 h1 {
@@ -131,7 +134,7 @@ a {
 
 @media (max-width: 1100px) {
     :root {
-        --img-width: calc(100vw - 4 * var(--img-pad)) !important;
+        --img-width: calc(100vw - 2 * var(--img-pad)) !important;
         --icon-width: calc(100vw - 2 * var(--img-pad)) !important;
     }
     .flex-cont {
@@ -139,6 +142,8 @@ a {
     }
     .icon-flex-left, .icon-flex-right, .img-flex-left, .img-flex-right {
         flex: calc(100%) !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
