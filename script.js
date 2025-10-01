@@ -5,20 +5,20 @@
  * @returns HTML formatted for a table
  */
 function makeTable(text, date) {
-    return `
-        <table>
-            <tr style='width: 100vw !important;'>
-                <th class='date-text'>
-                    <p>
-                        ` + text + `
-                    </p>
-                </th>
-                <th class='date'>
-                    <p>
-                        <b><i><tt>` + date + `</tt></i></b>
-                    </p>
-                </th>
-            </tr>
-        </table>
-    `;
+	return `
+		<table>
+			<tr style='width: 100vw !important;'>
+				<th class='date-text'>
+					<p>
+						` + text + `
+					</p>
+				</th>
+				<th class='date'>
+					<p>
+						<b><i><tt>` + date + `</tt></i></b>
+					</p>
+				</th>
+			</tr>
+		</table>
+	`;
 }

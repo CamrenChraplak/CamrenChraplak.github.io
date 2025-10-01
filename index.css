@@ -1,8 +1,8 @@
 :root {
-    --main-width: 100vw;
-    text-overflow: "-";
+	--main-width: 100vw;
+	text-overflow: "-";
 }
 
 li, p {
-    max-width: 560px !important;
+	max-width: 560px !important;
 }
